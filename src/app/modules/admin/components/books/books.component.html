@@ -1,0 +1,27 @@
+<div style="background-color: #332042;">
+  <div class="main">
+    <ul class="cards">
+      <li class="cards_item" *ngFor="let book of books">
+        <div class="card">
+          <div class="card_image"><img src={{book.image}} height="200px" width="300px"></div>
+          <div class="card_content">
+            <h2 class="card_title">{{book.book}}</h2>
+            <p class="card_text">Get knowldge</p>
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+                  <button class="btn card_btn" (click)="pdf(book._id)"><i class="bi bi-book-half"></i>Read</button>
+                </div>
+                <div class="col-6">
+                  <button class="btn card_btn"><a href={{book.link}} download={{book.book}}><i
+                        class="bi bi-cloud-arrow-down" ></i></a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

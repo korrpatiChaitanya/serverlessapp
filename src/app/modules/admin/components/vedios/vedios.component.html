@@ -1,0 +1,20 @@
+<div style="background-color: #332042;">
+<div class="main" >
+    <ul class="cards">
+        <li class="cards_item" *ngFor="let data of result">
+            <div class="card">
+                <div class="card_image"><img src={{data.image}}></div>
+                <div class="card_content">
+                    <h2 class="card_title">{{data.title}}</h2>
+                    <p class="card_text">Get more knowldge on the course</p>
+                    <button class="btn card_btn" (click)="play(data._id)"><i class="bi bi-play-btn"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-btn" viewBox="0 0 16 16">
+                        <path d="M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+                      </svg>&nbsp;play</button>
+                    
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+</div>

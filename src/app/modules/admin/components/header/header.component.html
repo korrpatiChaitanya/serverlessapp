@@ -1,0 +1,19 @@
+<header class="brand-navigation">
+  <div class="content">
+    <img class="logo-nav"
+      src="../assets/Logo.png">
+    <nav>
+      <ul class="navigation">
+        <li routerLinkActive="active"><a routerLink="./books">Books</a></li>
+        <li routerLinkActive="active"><a routerLink="./vedio">Videos</a></li>
+        <li routerLinkActive="active"><a routerLink="./upload">upload</a></li>
+        <li routerLinkActive="active"><a routerLink="./profile">profile</a></li>
+        <li><input type="text" placeholder="Search" [(ngModel)]="search" /> &nbsp;&nbsp;<button >Search</button></li>
+
+      </ul>
+    </nav>
+    <button class="button-dark" (click)="logout()">Logout</button>
+    
+
+  </div>
+</header>

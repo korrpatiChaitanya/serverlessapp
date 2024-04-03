@@ -1,0 +1,18 @@
+<div class="back">
+    <div class="container">
+        <div class="card">
+            <div class="card_title">
+                <h1>Upload Video</h1>
+                <span>You can upload only YouTube Videos</span>
+            </div>
+            <div class="form">
+                <form action="/register" method="post">
+                    <input type="text" name="Videoname" id="username" placeholder="Video Name" [(ngModel)]="title"/>
+                    <input type="text" name="Thimnail" placeholder="Thumbnail" [(ngModel)]="image" />
+                    <input type="text" name="password" placeholder="Video Link" [(ngModel)]="link" />
+                    <button (click)="upload()">Upload</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
